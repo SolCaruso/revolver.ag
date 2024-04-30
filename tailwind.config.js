@@ -33,6 +33,10 @@ module.exports = {
         "nav-red": "rgba(192, 53, 64, 1)",
       },
       fontSize: {
+        "2.5": "2.5rem",
+        "3": "3rem",
+        "4": "4rem",
+        "5.5": "5.5rem",
         "2xs": ".65rem",
         "3xs": ".55rem",
         "4xs": ".45rem",
@@ -52,12 +56,12 @@ module.exports = {
         ],
       },
       screens: {
-        xs: "440px",
+        "xs": "440px",
         "2xs": "340px",
-        nav: "850px",
+        "nav": "850px",
       },
       borderRadius: {
-        xl: "1rem",
+        "xl": "1rem",
         "2xl": "1.5rem",
       },
     },

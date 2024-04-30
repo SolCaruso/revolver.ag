@@ -163,37 +163,39 @@
     <!-- Header Area Ends -->
 
     <!-- Main Content Area Starts -->
-    <main class="revolver-main mx-auto pb-10 lg:max-w-[1200px]">
-      <div class="community-header">
-        <h1 class="mt-16">Solana's <span>Community</span></h1>
-        <h2>Sportbook & Casino</h2>
+    <main class="mx-auto px-4 lg:max-w-[1200px]">
+      <div class="mx-auto mb-12 max-w-2xl text-left transition-all duration-200 ease-in-out mt-12 md:mt-24 md:pb-10 lg:max-w-full lg:mt-36">
+        <h1 class="lg:text-5.5 md:text-4 text-5xl font-bold xs:text-5xl">Solana's <span class="bg-rvr bg-clip-text text-transparent">Community</span></h1>
+        <h2 class="lg:text-3 mt-3 text-3xl font-bold xs:text-4xl">Sportsbook & Casino</h2>
       </div>
-      <div class="cards mt-16 px-5">
-        <div class="card">
-          <img src="./images/svg/icons/cards/target.svg" alt="$RVR" />
-          <h5>$RVR</h5>
-          <p>Play with the $RVR token; house revenue = burned.</p>
+
+      <section class="flex flex-col gap-8 pb-10 lg:pb-28">
+        <div class="mx-auto flex max-w-2xl flex-col gap-5 lg:max-w-full lg:flex-row">
+          <div class="flex w-full flex-col items-center justify-start gap-4 rounded-xl border-2 border-gray-200 bg-white px-4 py-8 text-center">
+            <img src="./images/svg/icons/cards/target.svg" alt="$RVR"/>
+            <h5 class="text-xl font-bold">Sharp Picks</h5>
+            <p class="text-base font-medium text-gray-500">Play with the $RVR token; house revenue = burned.</p>
+          </div>
+          <div class="flex w-full flex-col items-center justify-start gap-4 rounded-xl border-2 border-gray-200 bg-white px-4 py-8 text-center">
+            <img src="./images/svg/icons/cards/market.svg" alt="Markets"/>
+            <h5 class="text-xl font-bold">Airdrops</h5>
+            <p class="text-base font-medium text-gray-500">Bet on Solana specialty markets + 1000s of sports markets, including esports.</p>
+          </div>
+          <div class="flex w-full flex-col items-center justify-start gap-4 rounded-xl border-2 border-gray-200 bg-white px-4 py-8 text-center">
+            <img src="./images/svg/icons/cards/bonus.svg" alt="Revolver.ag"/>
+            <h5 class="text-xl font-bold">Bonuses</h5>
+            <p class="text-base font-medium text-gray-500">Best odds; best bonuses; highest limits.</p>
+          </div>
         </div>
-        <div class="card">
-          <img src="./images/svg/icons/cards/market.svg" alt="Markets" />
-          <h5>Markets</h5>
-          <p>Bet on Solana specialty markets + 1000s of sports markets, including esports.</p>
-        </div>
-        <div class="card">
-          <img src="./images/svg/icons/cards/bonus.svg" alt="Revolver.ag" />
-          <h5>Bonuses</h5>
-          <p>Best odds; best bonuses; highest limits.</p>
-        </div>
-      </div>
+      </section>
     </main>
 
     <script>
+      // (Revolver background)
       window.addEventListener("load", function () {
         document.querySelector(".revolver-background").classList.add("show");
       });
-    </script>
 
-    <script>
       // (Nav bar dropdown)
       const dropDownMenu = document.getElementById("dropDown");
 
