@@ -1,7 +1,7 @@
 
 **To Do's**
 
-[ ] - Replace all code on perks.html with tw classes
+[x] - Replace all code on perks.html with tw classes
 [ ] - Replace all code on revolver.html with tw classes
 [ ] - Replace all code on index.html with tw classes
 [ ] - Update sportsbook buttons 
