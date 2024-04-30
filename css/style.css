@@ -1,0 +1,892 @@
+/**************************************************** 
+                    Global Styles
+ *****************************************************/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5em;
+}
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background-color: #f8f8f8;
+  --revolver: #ff5457;
+  --revolver-hover: #ff0101;
+  --revolver-red: rgba(255, 73, 77, 1);
+  --revolver-gradient: linear-gradient(
+    to right,
+    var(--revolver-red),
+    rgba(255, 111, 110, 1)
+  );
+  --revolver-purple: #8e7bff;
+  --revolver-box: #ff6e6d;
+  --revolver-bright: #f53838;
+  --slider-1-bg: #a9bba8;
+  --slider-1-color: #92a591;
+  --slider-1-rarity: #9867ef;
+}
+
+#active {
+  border-radius: 5px;
+  border: 1px solid var(--revolver-red);
+  background: rgba(255, 71, 76, 0.25);
+  color: var(--revolver-red);
+}
+
+.back-button {
+  display: none;
+}
+
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+.card img,
+.cards img {
+  display: inline-block;
+}
+
+.nav-a:hover .nav-svg path {
+  fill-opacity: 100%;
+  stroke-opacity: 100%;
+}
+
+.nav-svg {
+  align-self: center;
+}
+
+.nav-a:hover .nav-svg .rvr-path {
+  fill-opacity: 45%;
+}
+
+/* ----------------- TYPOGRAPHY ----------------- */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-style: normal;
+  line-height: normal;
+  color: #000;
+}
+
+h1 {
+  font-size: 5.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+
+h4 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+p {
+  color: #828282;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* ----------------- MAIN/HERO ------------------ */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1em;
+  z-index: 1;
+  transition: all ease-in-out 0.2s;
+}
+
+.title img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 0.8em;
+  width: 12em;
+  background: rgba(227, 224, 221, 0.25);
+  border: 1px solid rgba(175, 175, 175, 0.25);
+  backdrop-filter: blur(4.15px);
+  border-radius: 38px;
+  font-size: 20px;
+  font-weight: 400;
+  z-index: 1;
+  margin-top: 1em;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.hero-button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.hero button a img {
+  margin-left: 0.8em;
+  width: 18px;
+  height: 15px;
+  color: inherit;
+}
+
+.hero button:hover,
+.hero button:focus {
+  border-radius: 38px;
+  border: 1px solid rgba(175, 175, 175, 0.25);
+  background: rgba(193, 185, 177, 0.25);
+}
+
+.title h3 {
+  color: black;
+}
+
+/* ---------------- LILY SECTION ---------------- */
+
+.wildhart {
+  max-width: 9.5em;
+  animation: bobbing 3s ease-in-out infinite;
+  align-self: flex-end;
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.lily-container {
+  height: 11em;
+  display: flex;
+  justify-content: end;
+  padding: 1em;
+}
+
+/* --------------- UNDERDOG SECTION --------------- */
+
+.dog {
+  transition: all ease-in-out 0.2s;
+}
+
+/* ------------------ PAGE ------------------------- */
+/* --------------- REVOLVER.AG  -------------------- */
+
+.community-header {
+  text-align: left;
+  margin: 12em 0 6em 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.community-header h1,
+.community-header h2 {
+  color: black;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #dddddd;
+  text-align: center;
+  padding: 3.5em 0.7em;
+  width: 100%;
+}
+
+.card img {
+  margin-bottom: 1em;
+}
+
+.card h5 {
+  margin-bottom: 0.6em;
+}
+
+.revolver-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/png/background/swiggles.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.revolver-background.show {
+  opacity: 1;
+}
+
+.revolver-main {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+.community-header span {
+  color: transparent;
+  background: var(--revolver-gradient);
+  background-clip: text;
+}
+
+/* ------------------ PAGE ------------------------ */
+/* --------------- CLUB PERKS  -------------------- */
+
+.perks-padding {
+  padding: 1em;
+}
+
+.rvr-square {
+  width: 25em;
+  height: 25em;
+  background-color: var(--revolver-box);
+  display: flex;
+  border-radius: 2em;
+}
+
+.rvr-square img {
+  border-radius: 2em;
+}
+
+.perks-header {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.club-card {
+  border-radius: 15px;
+  border: 2px solid #dddddd;
+  background: #fff;
+  display: flex;
+  padding: 2em;
+  gap: 6em;
+}
+
+.club-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  align-items: start;
+}
+
+.club-info ul li {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.club-info ul {
+  display: flex;
+  gap: 4em;
+  padding: 1em 0;
+}
+
+.club-info button {
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  text-decoration: none;
+}
+
+.club-info button a {
+  text-decoration: none;
+  color: var(--revolver-bright);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 4rem;
+  border: 2px solid var(--revolver-bright);
+  border-radius: 50px;
+}
+
+.club-info button a:hover {
+  text-decoration: none;
+  color: white;
+  background: var(--revolver-gradient);
+  border-radius: 50px;
+}
+
+.perks-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 8em;
+}
+
+.perks-header h4 {
+  color: black;
+}
+
+.perks-card {
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  background: #fff;
+  text-align: center;
+  padding: 3.5em 0.7em;
+  width: 100%;
+}
+
+.perks-card h5 {
+  padding: 0.5em 0;
+}
+
+.club-perks {
+  padding-bottom: 5em;
+}
+
+.perks-card {
+  font-size: 0.9rem;
+}
+
+/* ------------------ PAGE ------------------------ */
+/* ------------------- NFT  ----------------------- */
+
+/**************************************************** 
+                    Desktop Styles
+ *****************************************************/
+
+@media screen and (min-width: 1026px) {
+  /* ----------------- STRUCTURE ----------------- */
+
+  .max-mar {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* header {
+        padding: 1.5em 0;
+    } */
+
+  .mid-container {
+    display: none;
+  }
+
+  /* ----------------- NAVIGATION ----------------- */
+
+  .rvr {
+    display: none;
+  }
+
+  .m-sportsbook {
+    display: none;
+  }
+
+  .nav-logo {
+    height: 2em;
+    display: flex;
+  }
+  /* 
+    header {
+        display: flex;
+        justify-content: space-between;
+    } */
+
+  .main-nav ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  .main-nav ul li {
+    align-items: center;
+    align-content: center;
+  }
+
+  .main-nav ul li a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(0, 0, 0, 0);
+    border-radius: 6px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.646em 1.5em;
+    text-align: center;
+    display: flex;
+  }
+
+  .main-nav ul li .white:not(:last-child) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .main-nav ul li:not(:last-child) {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+  }
+
+  .main-nav ul .white:not(:last-child) {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  #active {
+    background: rgba(255, 71, 76, 0.25);
+  }
+
+  .main-nav .white a {
+    color: black;
+  }
+
+  .main-nav .d-sportsbook {
+    color: white;
+  }
+
+  .d-sportsbook {
+    background-color: var(--revolver);
+    border-radius: 6px;
+    display: flex;
+  }
+
+  .main-nav ul li:hover:not(:last-child),
+  .main-nav ul li:focus:not(:last-child) {
+    background-color: rgba(175, 175, 175, 0.3);
+  }
+
+  .d-sportsbook:hover,
+  .d-sportsbook:focus {
+    background-color: var(--revolver-hover);
+  }
+
+  /* --------------- UNDERDOG SECTION --------------- */
+
+  .dog {
+    position: fixed;
+    bottom: 0;
+    left: -10em;
+    width: 40%;
+    z-index: -2;
+  }
+
+  /* ------------------ MAIN/HERO ------------------- */
+
+  .hero {
+    max-width: 1300px;
+    padding-top: 10em;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .title h3 {
+    font-size: 2em;
+    transition: all ease-in-out 0.2s;
+  }
+
+  /* ----------------- LILY SECTION ------------------ */
+
+  .wildhart {
+    position: absolute;
+    top: 18em;
+    right: 10em;
+    max-width: 18em;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+/**************************************************** 
+                Special Desktop Styles
+ *****************************************************/
+
+@media only screen and (max-width: 2200px) and (min-width: 931px) {
+  .wildhart {
+    position: absolute;
+    top: 8em;
+    right: 5em;
+    max-width: 15em;
+  }
+
+  .hero {
+    max-width: 900px;
+    padding: 7em 1em 1em 1em;
+  }
+
+  .dog {
+    min-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1700px) and (max-height: 1224px) {
+  .dog {
+    opacity: 5%;
+  }
+}
+
+/**************************************************** 
+                    Mobile Styles
+ *****************************************************/
+
+@media screen and (max-width: 1025px) {
+  /* ----------------- STRUCTURE ----------------- */
+
+  body {
+    line-height: 1.5em;
+    display: block;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  /* 
+    header {
+        padding: .5em 0;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        border-radius: 8px;
+        background-color: #F2F2F2;
+        justify-content: center;
+        box-shadow: 
+        0px 5px 50px -8px rgba(26, 26, 26, 0.24);
+    } */
+
+  .container {
+    padding-top: 1em;
+  }
+
+  /* ----------------- NAVIGATION ----------------- */
+
+  .nav-logo {
+    display: none;
+  }
+
+  .rvr {
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 29px;
+  }
+
+  .rvr:hover,
+  .rvr:focus {
+    background-color: rgba(175, 175, 175, 0.3);
+  }
+
+  .d-sportsbook {
+    display: none;
+  }
+
+  .d-sports {
+    display: none;
+  }
+
+  .m-sportsbook {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 2.5px 1em;
+    background-color: var(--revolver);
+  }
+
+  .m-sportsbook:hover,
+  .m-sportsbook:focus {
+    background-color: var(--revolver-hover);
+  }
+
+  .mobile-bottom ul {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    gap: 0.5em;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .mobile-bottom ul li {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .mobile-bottom ul li a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .mobile-bottom ul li a:hover,
+  .mobile-bottom ul li a:focus {
+    background-color: rgba(175, 175, 175, 0.3);
+  }
+
+  .mobile-bottom ul li:nth-child(-n + 3) a {
+    padding: 6.25px 1em;
+  }
+
+  .mobile-bottom ul li:nth-child(n + 4) a {
+    padding: 6px 1em;
+  }
+
+  .mobile-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mobile-top a {
+    display: flex;
+  }
+
+  .mid-container {
+    height: 29px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    width: 100%;
+    margin: 0 0.5em;
+  }
+
+  .discord img {
+    content: url("../images/svg/socm/discord.svg");
+  }
+
+  .x img {
+    content: url("../images/svg/socm/x.svg");
+  }
+
+  /* --------------- UNDERDOG SECTION --------------- */
+
+  .underdog {
+    padding: 1em 1em 0 1em;
+    display: flex;
+    bottom: -1em;
+    left: -10em;
+    z-index: -1;
+    position: fixed;
+  }
+
+  .dog {
+    min-width: 600px;
+  }
+
+  /* ------------------ PAGE ------------------------- */
+  /* --------------- REVOLVER.AG  -------------------- */
+
+  .community-header {
+    margin: 6em 0 3em 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .community-header h1 {
+    line-height: 1em;
+    font-size: 4em;
+  }
+
+  .community-header h2 {
+    margin-top: 0.5em;
+    font-size: 2.5em;
+  }
+
+  .card {
+    padding: 2em 1em;
+  }
+
+  /* ------------------ PAGE ------------------------ */
+  /* --------------- CLUB PERKS  -------------------- */
+
+  .club-card {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+  }
+
+  .rvr-square img {
+    border-radius: 0;
+    max-width: 375px;
+  }
+
+  .rvr-square {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .club-info {
+    align-items: center;
+  }
+
+  .club-info button,
+  .club-info a {
+    width: 100%;
+  }
+
+  .perks-padding {
+    padding: 2em;
+  }
+
+  .perks-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+  }
+
+  .club-perks {
+    padding-bottom: 1em;
+    padding-top: 2em;
+  }
+}
+
+/**************************************************** 
+                    X-Small Styles
+ *****************************************************/
+
+@media screen and (max-width: 450px) {
+  .community-header h1 {
+    line-height: 1em;
+    font-size: 3.5em;
+  }
+
+  .community-header h2 {
+    margin-top: 0.5em;
+    font-size: 2em;
+  }
+
+  .community-header {
+    margin: 3em 1em 0 1em;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .club-info ul,
+  .club-info ul li {
+    gap: 3px;
+  }
+
+  .club-info ul li a {
+    align-self: center;
+  }
+
+  .rvr-square img {
+    border-radius: none;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .perks-padding {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .rvr-square img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .rvr-square {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 930px) and (min-height: 50px) and (max-height: 630px) {
+  .dog {
+    display: none;
+  }
+
+  .hero {
+    width: 600px;
+    padding: 0 1em;
+    margin-top: -8em;
+  }
+
+  .lily-container {
+    padding: 0 1em 0 0;
+  }
+}
+
+@media screen and (max-width: 780px) and (min-width: 330px) and (max-height: 630px) {
+  .wildhart {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .discord,
+  .x {
+    display: none;
+  }
+}
