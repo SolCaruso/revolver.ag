@@ -701,6 +701,10 @@ video {
   top: 0px;
 }
 
+.top-72 {
+  top: 18rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1022,6 +1026,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-44 {
+  height: 11rem;
 }
 
 .min-h-14 {
@@ -2484,6 +2492,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-40 {
+  padding-top: 10rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -3096,6 +3108,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in {
