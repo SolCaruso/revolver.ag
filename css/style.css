@@ -57,6 +57,20 @@ html {
   scrollbar-width: none;
 }
 
+.nav-a:hover .nav-svg path {
+  fill-opacity: 100%;
+  stroke-opacity: 100%;
+}
+
+.nav-svg {
+  align-self: center;
+}
+
+.nav-a:hover .nav-svg .rvr-path {
+  fill-opacity: 45%;
+}
+
+
 /* ----------------- TYPOGRAPHY ----------------- */
 
 h1,
@@ -318,7 +332,7 @@ p {
   .dog {
     min-width: 600px;
   }
-
+}
 
 @media screen and (max-width: 930px) and (min-height: 50px) and (max-height: 630px) {
   .dog {
