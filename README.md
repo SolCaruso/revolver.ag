@@ -7,6 +7,7 @@
 [ ] - Update sportsbook buttons 
 [x] - Correct all active page nav buttons
 [ ] - Create better look for active and hover effect for Menu drop down
+[ ] - Create better look drop-down nav itself
 [x] - Fix drop-down active and non active button
 [ ] - Create slider functionality
 [ ] - Create different slides

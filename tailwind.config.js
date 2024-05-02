@@ -64,9 +64,15 @@ module.exports = {
         "xl": "1rem",
         "2xl": "1.5rem",
       },
+      padding: {
+        '30': '7.5rem',
+      },
+      width: {
+        '22': '5.5rem',
+      },
+      height: {
+        '22': '5.5rem',
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
 };

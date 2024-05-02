@@ -165,7 +165,7 @@
     <!-- Main Content Area Starts -->
     <main class="mx-auto px-4 lg:max-w-[1200px]">
       <!-- Cards Section -->
-      <section class="mt-10 md:mt-20 mb-10 md:mb-20">
+      <section class="mb-10 mt-10 md:mb-20 md:mt-20">
         <div class="text-center">
           <h4 class="py-8 text-4xl font-bold">Are you a dawg?</h4>
         </div>
@@ -189,8 +189,11 @@
       </section>
 
       <!-- Slider Section -->
-      <section class="mx-auto size-full pb-4 pt-4 md:py-5">
+      <section class="relative mx-auto size-full pb-4 pt-4 md:py-5">
         <h4 class="py-8 text-center text-4xl font-bold">Meet the underdogs.</h4>
+
+        <!-- Background Blur -->
+        <div class="nav-blur absolute inset-x-0 inset-y-24 z-[-1]"></div>
 
         <!-- Slider 1 -->
 
@@ -405,6 +408,13 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Slider Nav -->
+        <div class="relative flex h-48 w-full justify-center gap-4">
+          <div class="slider-box"></div>
+          <div class="red-circle w-16 h-16 absolute self-center rounded-full bg-red-500 "></div>
+          <div class="gray-circle absolute h-16 w-16 self-center rounded-full"></div>
         </div>
       </section>
 
