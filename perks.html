@@ -53,16 +53,16 @@
             </li>
             <li class="ml-1.5 flex cursor-pointer rounded-md border border-red-500 bg-rvr px-4 py-2 hover:border-red-400 hover:bg-red-500" onclick="window.location.href='#';"><img class="mr-1.5 w-4" src="./images/svg/icons/sb-nav-button.svg" alt="sportsbook button icon" /><a class="text-xs font-semibold text-white" href="#" aria-label="link to sports book">Sportsbook</a></li>
           </div>
-          <li id="navButton" class="nav-down-button flex cursor-pointer items-center gap-1 rounded-md border-gray-200 bg-nav-grey py-1.5 pl-4 pr-2 text-sm font-bold text-gray-700 hover:border-gray-300 hover:bg-nav-grey-hover nav:hidden">Menu<img src="./images/svg/icons/nav-down.svg" alt="show menu options" /></li>
+          <li id="navButton" class="nav-down-button flex cursor-pointer items-center gap-1 rounded-md border-gray-200 bg-nav-grey py-1.5 pl-4 pr-2 text-sm font-bold text-gray-700 hover:border-gray-300 hover:bg-nav-grey-hover nav:hidden">Menu<img id="navButtonIcon" src="./images/svg/icons/nav-down.svg" alt="show menu options" /></li>
         </ul>
 
         <!-- Drop-down Nav -->
         <div id="dropDown" class="dropdown-overlay relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-            <div class="mx-1 mt-16 flex min-h-full items-start p-4 text-center">
-              <ul role="list" class="flex flex-1 flex-col items-center gap-y-7 rounded-lg border-2 bg-white shadow-xl">
+            <div class="mx-1 mt-16 flex min-h-full items-start p-2 text-center">
+              <ul role="list" class="flex flex-1 flex-col items-left gap-y-7 rounded-lg border-2 bg-white shadow-xl p-4">
                 <li>
-                  <ul role="list" class="mx-2 my-6 space-y-1 pb-6">
+                  <ul role="list" class="mx-2 my-2 space-y-1 pb-4">
                     <!-- Pages -->
                     <div class="py-3 text-left text-xs font-semibold leading-6 text-gray-400 sm:text-lg lg:text-sm">Pages</div>
 
@@ -211,60 +211,57 @@
     </main>
 
     <script>
-      // (Nav bar dropdown)
-      const dropDownMenu = document.getElementById("dropDown");
+      document.addEventListener('DOMContentLoaded', function() {
+          const navButton = document.getElementById('navButton');
+          const dropDown = document.getElementById('dropDown');
+          const navButtonIcon = document.getElementById('navButtonIcon');
+          const fixedOverlay = document.querySelector('.fixed.inset-0'); // Explicitly target the overlay
 
-      dropDownMenu.addEventListener("click", () => {
-        dropDownMenu.classList.toggle("hidden");
+          // Close the dropdown menu
+          function closeDropdown() {
+              if (!dropDown.classList.contains('hidden')) {
+                  dropDown.classList.add('hidden');
+                  navButtonIcon.src = './images/svg/icons/nav-down.svg';
+                  console.log("Dropdown closed");
+              }
+          }
+
+          // Toggle the dropdown menu
+          function toggleDropdown() {
+              const isHidden = dropDown.classList.contains('hidden');
+              dropDown.classList.toggle('hidden');
+              navButtonIcon.src = isHidden ? './images/svg/icons/nav-up.svg' : './images/svg/icons/nav-down.svg';
+              console.log("Dropdown toggled to " + (isHidden ? "open" : "closed"));
+          }
+
+          // Event listener for the nav button
+          navButton.addEventListener('click', function(event) {
+              toggleDropdown();
+              event.stopPropagation(); // Prevent event from propagating to document
+          });
+
+          // Event listener for clicking on the overlay to close the dropdown
+          if (fixedOverlay) {
+              fixedOverlay.addEventListener('click', function(event) {
+                  console.log("Click registered on overlay:", event.target);
+                  closeDropdown();
+              });
+          } else {
+              console.log("No overlay found for click events.");
+          }
+
+          // Event listener for scrolling
+          window.addEventListener('scroll', function() {
+              console.log("Scroll detected");
+              closeDropdown();
+          }, { passive: true });
+
+          // Event listener for resizing the window
+          window.addEventListener('resize', function() {
+              console.log("Resize detected");
+              closeDropdown();
+          });
       });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get the nav-down button
-        const navDownButton = document.querySelector(".nav-down-button");
-
-        // Get the drop-down overlay
-        const dropdownOverlay = document.querySelector(".dropdown-overlay");
-
-        // Function to close the drop-down overlay
-        function closeDropdown() {
-          dropdownOverlay.classList.add("hidden");
-        }
-
-        // Add an event listener to the nav-down button
-        navDownButton.addEventListener("click", function (event) {
-          // Toggle the visibility of the drop-down overlay
-          dropdownOverlay.classList.toggle("hidden");
-          // Stop the click event from propagating to the body click listener
-          event.stopPropagation();
-        });
-
-        // Add an event listener to the document body
-        document.body.addEventListener("click", function () {
-          // Close the drop-down overlay when clicking outside the nav container or drop-down overlay
-          closeDropdown();
-        });
-
-        // Add an event listener to the drop-down overlay to prevent it from closing when clicked
-        dropdownOverlay.addEventListener("click", function (event) {
-          // Prevent the event from bubbling up to the body click listener
-          event.stopPropagation();
-        });
-      });
-
-      // (Drop-down close on scroll and resize)
-      // Function to close the dropdown when scrolling
-      function closeDropdownOnScroll() {
-        document.getElementById("dropDown").classList.add("hidden");
-      }
-
-      // Function to close the dropdown when the viewport changes
-      function closeDropdownOnResize() {
-        document.getElementById("dropDown").classList.add("hidden");
-      }
-
-      // Add event listeners for scroll and resize events
-      window.addEventListener("scroll", closeDropdownOnScroll);
-      window.addEventListener("resize", closeDropdownOnResize);
     </script>
   </body>
 </html>
