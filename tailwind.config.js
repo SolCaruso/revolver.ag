@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      boxShadow: {
+        'rvr-shadow': ' 0px 0px 11.4px 1px rgba(255, 71, 76, 0.56)',
+      },
       backgroundImage: (theme) => ({
         rvr: "linear-gradient(to right, rgba(255, 73, 77, 1), rgba(255, 111, 110, 1))",
       }),
@@ -19,7 +22,7 @@ module.exports = {
         "rarity-purple": "#9867EF",
         "rarity-black": "#333832",
         "rvr-red": "#FF5457",
-        "rvr-2": "#FF5457",
+        "rvr-stroke": "#FF474C",
         "rvr-bright": "#F53838",
         "rvr-hover": "#ff0101",
         "rvr-hover-2": "#FF6A69",
@@ -31,6 +34,7 @@ module.exports = {
         "nav-grey": "rgba(0, 0, 0, 0.05)",
         "nav-grey-hover": "rgba(0, 0, 0, 0.10)",
         "nav-red": "rgba(192, 53, 64, 1)",
+        "grey-circle": "rgba(206, 206, 206, 0.25)",
       },
       fontSize: {
         "2.5": "2.5rem",
@@ -70,9 +74,11 @@ module.exports = {
       },
       width: {
         '22': '5.5rem',
+        '5.5': '1.375rem',
       },
       height: {
         '22': '5.5rem',
+        '33': '2.0625rem',
       },
     },
   },
