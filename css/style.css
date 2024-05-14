@@ -107,13 +107,18 @@ html {
   transform-origin: center;
   transform: translateY(100%);
   opacity: 0;
-  transition: width 1s ease-in-out;
+  transition: width 500ms ease-in-out, opacity 500ms ease-in-out; /* Added opacity transition */
 }
 
 .red-circle {
   background: var(--revolver-gradient);
   transform-origin: center;
   transform: scale(0);
+}
+
+.nav-buttons {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out; /* Transition for opacity */
 }
 
 .grayAnimation {
@@ -125,7 +130,7 @@ html {
 }
 
 .expand {
-  width: 15rem; /* Equivalent to w-60 */
+  width: 17rem; /* Equivalent to w-60 */
 }
 
 @keyframes grayAnimation {
@@ -174,6 +179,7 @@ html {
     backdrop-filter: blur(4.150000095367432px);
   }
 }
+
 
 /* ----------------- TYPOGRAPHY ----------------- */
 
