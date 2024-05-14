@@ -448,6 +448,20 @@
     <!-- Scripts -->
 
     <script>
+
+       // (Slider)
+       const openMobileOverlayButton = document.getElementById("openMobileOverlayButton");
+      const mobileOverlay = document.getElementById("mobileOverlay");
+
+      openMobileOverlayButton.addEventListener("click", () => {
+        mobileOverlay.classList.toggle("hidden");
+      });
+
+      document.getElementById("overlayBackground").addEventListener("click", function () {
+        mobileOverlay.classList.add("hidden");
+      });
+
+      // Dropdown menu
       document.addEventListener('DOMContentLoaded', function() {
           const navButton = document.getElementById('navButton');
           const dropDown = document.getElementById('dropDown');
