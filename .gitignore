@@ -1,0 +1,8 @@
+# Node.js dependencies
+node_modules
+
+# Optional: Other common files to ignore
+.DS_Store
+.env
+dist
+build
