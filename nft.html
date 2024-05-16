@@ -29,7 +29,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100.900&display=swap" rel="stylesheet" />
 
     <!-- Favicon Styles -->
-    <link rel="icon" type="image/x-icon" href="./images/svg/revolver/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="./images/svg/revolver/favicon.svg"/>
+
+    <!-- Blaze Slider -->
+    <link rel="stylesheet" href="./blaze-slider/blaze.css">
+    <script src="./blaze-slider/blaze-slider.min.js" defer></script>
   </head>
 
   <body class="box-border bg-rvr-full-bg">
@@ -195,878 +199,905 @@
         <!-- Background Blur -->
         <div class="nav-blur absolute inset-x-0 inset-y-24 z-[-1]"></div>
 
-        <!-- Slider 1 -->
-        <div>
-          <!-- 1st Page -->
-          <div class="relative rounded-2xl bg-sldr-green md:flex">
-            <div class="md:w-1/2">
-              <div class="absolute left-0 top-0 flex items-center">
-                <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
-                  <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
-                  <p class="text-s font-semibold text-rarity-black">668</p>
-                </div>
-              </div>
-              <div class="absolute right-0 top-0 flex items-center md:hidden">
-                <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
-                  <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
-                </button>
-              </div>
-              <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
-            </div>
 
-            <!-- 2nd Page (desktop)-->
-            <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
-              <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
-                <div>
-                  <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
-                  <div class="flex items-center">
-                    <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
-                    <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
-                  </div>
-                </div>
-              </div>
 
-              <!-- Box 1 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img src="./images/svg/nft/dog.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
-                </div>
+        <!-- Blaze Slider -->
+        <div class="blaze-slider">
+          <div class="blaze-container">
+              <div class="blaze-track-container">
+                  <div class="blaze-track">
+                      <!-- Slider 1 -->
+                      <div>
+                        <div>
+                        <!-- 1st Page -->
+                        <div class="relative rounded-2xl bg-sldr-green md:flex">
+                          <div class="md:w-1/2">
+                            <div class="absolute left-0 top-0 flex items-center">
+                              <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
+                                <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
+                                <p class="text-s font-semibold text-rarity-black">668</p>
+                              </div>
+                            </div>
+                            <div class="absolute right-0 top-0 flex items-center md:hidden">
+                              <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
+                                <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
+                              </button>
+                            </div>
+                            <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
+                          </div>
+              
+                          <!-- 2nd Page (desktop)-->
+                          <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
+                            <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
+                              <div>
+                                <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
+                                <div class="flex items-center">
+                                  <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
+                                  <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <!-- Box 1 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img src="./images/svg/nft/dog.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
+                              </div>
+                            </div>
+                            <!-- Box 2 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
+                              </div>
+                            </div>
+                            <!-- Box 3 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Blue <span class="hidden lg:inline-block">Dress</span> Shirt</p>
+                              </div>
+                            </div>
+                            <!-- Box 4 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
+                              </div>
+                            </div>
+                            <!-- Box 5 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
+                              </div>
+                            </div>
+                            <!-- Box 6 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
+                              </div>
+                            </div>
+                            <!-- Box 7 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
+                              </div>
+                            </div>
+                            <!-- Box 8 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <!-- 2nd Page (mobile overlay)-->
+                        <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
+                          <!-- Shaded background -->
+                          <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
+                          <div class="flex h-full flex-col items-center justify-center">
+                            <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
+                              <div class="flex items-center">
+                                <div>
+                                  <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
+                                  <div class="flex items-center">
+                                    <p class="mr-2 text-xl font-black text-white">2301</p>
+                                    <p class="text-xl font-black text-sldr-2nd-green">//</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mt-6 grid grid-cols-2 gap-3">
+                                <!-- Box 1 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
+                                  </div>
+                                </div>
+                                <!-- Box 2 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
+                                  </div>
+                                </div>
+                                <!-- Box 3 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
+                                  </div>
+                                </div>
+                                <!-- Box 4 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
+                                    <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs"><span>Suspen</span><span>ders</span></p>
+                                  </div>
+                                </div>
+                                <!-- Box 5 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
+                                  </div>
+                                </div>
+                                <!-- Box 6 -->
+                                <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
+                                    <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
+                                  </div>
+                                </div>
+                                <!-- Box 7 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
+                                  </div>
+                                </div>
+                                <!-- Box 8 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- Slider 2 -->
+                      <div>
+                        <div>
+                        <!-- 1st Page -->
+                        <div class="relative rounded-2xl bg-orange-600 md:flex">
+                          <div class="md:w-1/2">
+                            <div class="absolute left-0 top-0 flex items-center">
+                              <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
+                                <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
+                                <p class="text-s font-semibold text-rarity-black">668</p>
+                              </div>
+                            </div>
+                            <div class="absolute right-0 top-0 flex items-center md:hidden">
+                              <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
+                                <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
+                              </button>
+                            </div>
+                            <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
+                          </div>
+              
+                          <!-- 2nd Page (desktop)-->
+                          <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
+                            <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
+                              <div>
+                                <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
+                                <div class="flex items-center">
+                                  <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
+                                  <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <!-- Box 1 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img src="./images/svg/nft/dog.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
+                              </div>
+                            </div>
+                            <!-- Box 2 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
+                              </div>
+                            </div>
+                            <!-- Box 3 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Blue <span class="hidden lg:inline-block">Dress</span> Shirt</p>
+                              </div>
+                            </div>
+                            <!-- Box 4 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
+                              </div>
+                            </div>
+                            <!-- Box 5 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
+                              </div>
+                            </div>
+                            <!-- Box 6 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
+                              </div>
+                            </div>
+                            <!-- Box 7 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
+                              </div>
+                            </div>
+                            <!-- Box 8 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <!-- 2nd Page (mobile overlay)-->
+                        <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
+                          <!-- Shaded background -->
+                          <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
+                          <div class="flex h-full flex-col items-center justify-center">
+                            <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
+                              <div class="flex items-center">
+                                <div>
+                                  <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
+                                  <div class="flex items-center">
+                                    <p class="mr-2 text-xl font-black text-white">2301</p>
+                                    <p class="text-xl font-black text-sldr-2nd-green">//</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mt-6 grid grid-cols-2 gap-3">
+                                <!-- Box 1 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
+                                  </div>
+                                </div>
+                                <!-- Box 2 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
+                                  </div>
+                                </div>
+                                <!-- Box 3 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
+                                  </div>
+                                </div>
+                                <!-- Box 4 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
+                                    <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs"><span>Suspen</span><span>ders</span></p>
+                                  </div>
+                                </div>
+                                <!-- Box 5 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
+                                  </div>
+                                </div>
+                                <!-- Box 6 -->
+                                <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
+                                    <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
+                                  </div>
+                                </div>
+                                <!-- Box 7 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
+                                  </div>
+                                </div>
+                                <!-- Box 8 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- Slider 3 -->
+                      <div>
+                        <div>
+                        <!-- 1st Page -->
+                        <div class="relative rounded-2xl bg-red-400 md:flex">
+                          <div class="md:w-1/2">
+                            <div class="absolute left-0 top-0 flex items-center">
+                              <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
+                                <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
+                                <p class="text-s font-semibold text-rarity-black">668</p>
+                              </div>
+                            </div>
+                            <div class="absolute right-0 top-0 flex items-center md:hidden">
+                              <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
+                                <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
+                              </button>
+                            </div>
+                            <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
+                          </div>
+              
+                          <!-- 2nd Page (desktop)-->
+                          <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
+                            <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
+                              <div>
+                                <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
+                                <div class="flex items-center">
+                                  <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
+                                  <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <!-- Box 1 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img src="./images/svg/nft/dog.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
+                              </div>
+                            </div>
+                            <!-- Box 2 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
+                              </div>
+                            </div>
+                            <!-- Box 3 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Blue <span class="hidden lg:inline-block">Dress</span> Shirt</p>
+                              </div>
+                            </div>
+                            <!-- Box 4 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
+                              </div>
+                            </div>
+                            <!-- Box 5 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
+                              </div>
+                            </div>
+                            <!-- Box 6 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
+                              </div>
+                            </div>
+                            <!-- Box 7 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
+                              </div>
+                            </div>
+                            <!-- Box 8 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <!-- 2nd Page (mobile overlay)-->
+                        <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
+                          <!-- Shaded background -->
+                          <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
+                          <div class="flex h-full flex-col items-center justify-center">
+                            <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
+                              <div class="flex items-center">
+                                <div>
+                                  <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
+                                  <div class="flex items-center">
+                                    <p class="mr-2 text-xl font-black text-white">2301</p>
+                                    <p class="text-xl font-black text-sldr-2nd-green">//</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mt-6 grid grid-cols-2 gap-3">
+                                <!-- Box 1 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
+                                  </div>
+                                </div>
+                                <!-- Box 2 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
+                                  </div>
+                                </div>
+                                <!-- Box 3 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
+                                  </div>
+                                </div>
+                                <!-- Box 4 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
+                                    <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs"><span>Suspen</span><span>ders</span></p>
+                                  </div>
+                                </div>
+                                <!-- Box 5 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
+                                  </div>
+                                </div>
+                                <!-- Box 6 -->
+                                <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
+                                    <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
+                                  </div>
+                                </div>
+                                <!-- Box 7 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
+                                  </div>
+                                </div>
+                                <!-- Box 8 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- Slider 4 -->
+                      <div>
+                        <div>
+                        <!-- 1st Page -->
+                        <div class="relative rounded-2xl bg-blue-500 md:flex">
+                          <div class="md:w-1/2">
+                            <div class="absolute left-0 top-0 flex items-center">
+                              <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
+                                <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
+                                <p class="text-s font-semibold text-rarity-black">668</p>
+                              </div>
+                            </div>
+                            <div class="absolute right-0 top-0 flex items-center md:hidden">
+                              <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
+                                <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
+                              </button>
+                            </div>
+                            <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
+                          </div>
+              
+                          <!-- 2nd Page (desktop)-->
+                          <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
+                            <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
+                              <div>
+                                <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
+                                <div class="flex items-center">
+                                  <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
+                                  <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <!-- Box 1 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img src="./images/svg/nft/dog.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
+                              </div>
+                            </div>
+                            <!-- Box 2 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
+                              </div>
+                            </div>
+                            <!-- Box 3 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Blue <span class="hidden lg:inline-block">Dress</span> Shirt</p>
+                              </div>
+                            </div>
+                            <!-- Box 4 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
+                              </div>
+                            </div>
+                            <!-- Box 5 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
+                              </div>
+                            </div>
+                            <!-- Box 6 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
+                              </div>
+                            </div>
+                            <!-- Box 7 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
+                              </div>
+                            </div>
+                            <!-- Box 8 -->
+                            <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
+                              <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
+                                <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                              </div>
+                              <div class="uppercase">
+                                <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
+                                <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <!-- 2nd Page (mobile overlay)-->
+                        <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
+                          <!-- Shaded background -->
+                          <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
+                          <div class="flex h-full flex-col items-center justify-center">
+                            <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
+                              <div class="flex items-center">
+                                <div>
+                                  <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
+                                  <div class="flex items-center">
+                                    <p class="mr-2 text-xl font-black text-white">2301</p>
+                                    <p class="text-xl font-black text-sldr-2nd-green">//</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mt-6 grid grid-cols-2 gap-3">
+                                <!-- Box 1 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
+                                  </div>
+                                </div>
+                                <!-- Box 2 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
+                                  </div>
+                                </div>
+                                <!-- Box 3 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
+                                  </div>
+                                </div>
+                                <!-- Box 4 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
+                                    <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs"><span>Suspen</span><span>ders</span></p>
+                                  </div>
+                                </div>
+                                <!-- Box 5 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
+                                  </div>
+                                </div>
+                                <!-- Box 6 -->
+                                <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
+                                    <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
+                                  </div>
+                                </div>
+                                <!-- Box 7 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
+                                  </div>
+                                </div>
+                                <!-- Box 8 -->
+                                <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
+                                  <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
+                                    <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
+                                  </div>
+                                  <div class="uppercase">
+                                    <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
+                                    <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
               </div>
-              <!-- Box 2 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
-                </div>
-              </div>
-              <!-- Box 3 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Blue <span class="hidden lg:inline-block">Dress</span> Shirt</p>
-                </div>
-              </div>
-              <!-- Box 4 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
-                </div>
-              </div>
-              <!-- Box 5 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
-                </div>
-              </div>
-              <!-- Box 6 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
-                </div>
-              </div>
-              <!-- Box 7 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
-                </div>
-              </div>
-              <!-- Box 8 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2nd Page (mobile overlay)-->
-          <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
-            <!-- Shaded background -->
-            <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
-            <div class="flex h-full flex-col items-center justify-center">
-              <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
-                <div class="flex items-center">
-                  <div>
-                    <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
-                    <div class="flex items-center">
-                      <p class="mr-2 text-xl font-black text-white">2301</p>
-                      <p class="text-xl font-black text-sldr-2nd-green">//</p>
-                    </div>
+              <!-- Slider Nav -->
+              <div id="sliderNav" class="my-structure relative flex h-48 w-full justify-center items-center">
+                <div class="red-circle w-16 h-16 absolute rounded-full bg-red-500"></div>
+                <div class="gray-circle h-16 w-16 absolute rounded-full flex items-center justify-center">
+                  <!-- Nav buttons -->
+                  <div class="nav-buttons flex justify-center items-center gap-4">
+                    <button class="bg-rvr w-14 rounded-full h-4"></button>
+                    <button class="rounded-full h-4 bg-gray-500 w-4 blaze-next"></button>
+                    <button class="rounded-full h-4 bg-gray-500 w-4"></button>
+                    <button class="rounded-full h-4 bg-gray-500 w-4"></button>
                   </div>
                 </div>
-                <div class="mt-6 grid grid-cols-2 gap-3">
-                  <!-- Box 1 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
-                    </div>
-                  </div>
-                  <!-- Box 2 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
-                    </div>
-                  </div>
-                  <!-- Box 3 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
-                    </div>
-                  </div>
-                  <!-- Box 4 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
-                      <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs"><span>Suspen</span><span>ders</span></p>
-                    </div>
-                  </div>
-                  <!-- Box 5 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
-                    </div>
-                  </div>
-                  <!-- Box 6 -->
-                  <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
-                      <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
-                    </div>
-                  </div>
-                  <!-- Box 7 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
-                    </div>
-                  </div>
-                  <!-- Box 8 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
+              <!-- putting nav buttons and pagination in a custom structure -->
+              <div class="my-structure">
+                  <button class="blaze-prev" aria-label="Go to previous slide"></button>
+                  <div class="blaze-pagination"></div>
+                  <button class="blaze-next" aria-label="Go to next slide"></button>
+              </div>
           </div>
         </div>
 
-        <!-- Slider 2 -->
-        <div class="hidden">
-          <!-- 1st Page -->
-          <div class="relative rounded-2xl bg-sldr-green md:flex">
-            <div class="md:w-1/2">
-              <div class="absolute left-0 top-0 flex items-center">
-                <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
-                  <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
-                  <p class="text-s font-semibold text-rarity-black">668</p>
-                </div>
-              </div>
-              <div class="absolute right-0 top-0 flex items-center md:hidden">
-                <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
-                  <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
-                </button>
-              </div>
-              <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
-            </div>
-
-            <!-- 2nd Page (desktop)-->
-            <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
-              <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
-                <div>
-                  <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
-                  <div class="flex items-center">
-                    <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
-                    <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Box 1 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img src="./images/svg/nft/dog.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
-                </div>
-              </div>
-              <!-- Box 2 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
-                </div>
-              </div>
-              <!-- Box 3 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Blue <span
-                      class="hidden lg:inline-block">Dress</span> Shirt</p>
-                </div>
-              </div>
-              <!-- Box 4 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
-                </div>
-              </div>
-              <!-- Box 5 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
-                </div>
-              </div>
-              <!-- Box 6 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
-                </div>
-              </div>
-              <!-- Box 7 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
-                </div>
-              </div>
-              <!-- Box 8 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2nd Page (mobile overlay)-->
-          <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
-            <!-- Shaded background -->
-            <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
-            <div class="flex h-full flex-col items-center justify-center">
-              <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
-                <div class="flex items-center">
-                  <div>
-                    <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
-                    <div class="flex items-center">
-                      <p class="mr-2 text-xl font-black text-white">2301</p>
-                      <p class="text-xl font-black text-sldr-2nd-green">//</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-6 grid grid-cols-2 gap-3">
-                  <!-- Box 1 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
-                    </div>
-                  </div>
-                  <!-- Box 2 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
-                    </div>
-                  </div>
-                  <!-- Box 3 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
-                    </div>
-                  </div>
-                  <!-- Box 4 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
-                      <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs">
-                        <span>Suspen</span><span>ders</span></p>
-                    </div>
-                  </div>
-                  <!-- Box 5 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
-                    </div>
-                  </div>
-                  <!-- Box 6 -->
-                  <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
-                      <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
-                    </div>
-                  </div>
-                  <!-- Box 7 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
-                    </div>
-                  </div>
-                  <!-- Box 8 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slider 3 -->
-        <div class="hidden">
-          <!-- 1st Page -->
-          <div class="relative rounded-2xl bg-sldr-green md:flex">
-            <div class="md:w-1/2">
-              <div class="absolute left-0 top-0 flex items-center">
-                <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
-                  <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
-                  <p class="text-s font-semibold text-rarity-black">668</p>
-                </div>
-              </div>
-              <div class="absolute right-0 top-0 flex items-center md:hidden">
-                <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
-                  <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
-                </button>
-              </div>
-              <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
-            </div>
-
-            <!-- 2nd Page (desktop)-->
-            <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
-              <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
-                <div>
-                  <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
-                  <div class="flex items-center">
-                    <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
-                    <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Box 1 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img src="./images/svg/nft/dog.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
-                </div>
-              </div>
-              <!-- Box 2 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
-                </div>
-              </div>
-              <!-- Box 3 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Blue <span
-                      class="hidden lg:inline-block">Dress</span> Shirt</p>
-                </div>
-              </div>
-              <!-- Box 4 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
-                </div>
-              </div>
-              <!-- Box 5 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
-                </div>
-              </div>
-              <!-- Box 6 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
-                </div>
-              </div>
-              <!-- Box 7 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
-                </div>
-              </div>
-              <!-- Box 8 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2nd Page (mobile overlay)-->
-          <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
-            <!-- Shaded background -->
-            <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity"></div>
-            <div class="flex h-full flex-col items-center justify-center">
-              <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
-                <div class="flex items-center">
-                  <div>
-                    <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
-                    <div class="flex items-center">
-                      <p class="mr-2 text-xl font-black text-white">2301</p>
-                      <p class="text-xl font-black text-sldr-2nd-green">//</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-6 grid grid-cols-2 gap-3">
-                  <!-- Box 1 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German Shepherd</p>
-                    </div>
-                  </div>
-                  <!-- Box 2 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
-                    </div>
-                  </div>
-                  <!-- Box 3 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
-                    </div>
-                  </div>
-                  <!-- Box 4 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
-                      <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs">
-                        <span>Suspen</span><span>ders</span></p>
-                    </div>
-                  </div>
-                  <!-- Box 5 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
-                    </div>
-                  </div>
-                  <!-- Box 6 -->
-                  <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
-                      <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
-                    </div>
-                  </div>
-                  <!-- Box 7 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
-                    </div>
-                  </div>
-                  <!-- Box 8 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slider 4 -->
-        <div class="hidden">
-          <!-- 1st Page -->
-          <div class="relative rounded-2xl bg-sldr-green md:flex">
-            <div class="md:w-1/2">
-              <div class="absolute left-0 top-0 flex items-center">
-                <div class="m-5 flex items-center justify-center gap-1 rounded-full bg-rarity-purple px-2.5 py-1.5">
-                  <img class="w-5" src="./images/svg/nft/rarity.svg" alt="rarity gem icon" />
-                  <p class="text-s font-semibold text-rarity-black">668</p>
-                </div>
-              </div>
-              <div class="absolute right-0 top-0 flex items-center md:hidden">
-                <button class="m-5 flex items-center justify-center gap-1 px-2.5 py-1.5" id="openMobileOverlayButton">
-                  <img class="my-1.5 w-8" src="./images/svg/nft/more.svg" alt="see more info icon" />
-                </button>
-              </div>
-              <img class="w-full" src="./images/png/dog-slider/dog-1/DOG2.png" alt="underdog NFT with suspenders" />
-            </div>
-
-            <!-- 2nd Page (desktop)-->
-            <div class="mt-6 hidden grid-cols-2 gap-3 px-5 pb-5 md:grid md:w-1/2 lg:pb-20 lg:pr-10 xl:pb-32">
-              <div class="col-span-2 flex items-center lg:pb-5 lg:pt-8">
-                <div>
-                  <p class="text-2xs font-black text-sldr-2nd-green lg:text-sm">REVOLVER</p>
-                  <div class="flex items-center">
-                    <p class="mr-2 text-xl font-black text-white lg:text-3xl">2301</p>
-                    <p class="text-xl font-black text-sldr-2nd-green lg:text-3xl">//</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Box 1 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img src="./images/svg/nft/dog.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Type</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">German Shepherd</p>
-                </div>
-              </div>
-              <!-- Box 2 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Job Title</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Risk Analyst</p>
-                </div>
-              </div>
-              <!-- Box 3 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Shirt</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Blue <span
-                      class="hidden lg:inline-block">Dress</span> Shirt</p>
-                </div>
-              </div>
-              <!-- Box 4 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Accessory</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Suspenders</p>
-                </div>
-              </div>
-              <!-- Box 5 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Proficiency</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Roulette</p>
-                </div>
-              </div>
-              <!-- Box 6 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Facial Hair</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Clean Shave</p>
-                </div>
-              </div>
-              <!-- Box 7 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Eye Color</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Fiji Bungalo</p>
-                </div>
-              </div>
-              <!-- Box 8 -->
-              <div class="flex items-center gap-2 rounded-md bg-sldr-2nd-green px-3 md:py-1">
-                <div class="mr-1 flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md p-1">
-                  <img class="w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                </div>
-                <div class="uppercase">
-                  <p class="mb-1 text-left text-3xs font-bold text-white">Background</p>
-                  <p class="text-left text-xs font-black leading-3 text-white">Sage</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2nd Page (mobile overlay)-->
-          <div id="mobileOverlay" class="fixed inset-0 z-10 hidden items-center justify-center md:invisible">
-            <!-- Shaded background -->
-            <div id="overlayBackground" class="fixed inset-0 bg-gray-300 bg-opacity-75 transition-opacity">
-            </div>
-            <div class="flex h-full flex-col items-center justify-center">
-              <div class="relative mx-5 overflow-hidden rounded-lg bg-sldr-green px-8 py-6 text-left shadow-xl">
-                <div class="flex items-center">
-                  <div>
-                    <p class="text-2xs font-black text-sldr-2nd-green">REVOLVER</p>
-                    <div class="flex items-center">
-                      <p class="mr-2 text-xl font-black text-white">2301</p>
-                      <p class="text-xl font-black text-sldr-2nd-green">//</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-6 grid grid-cols-2 gap-3">
-                  <!-- Box 1 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-6" src="./images/svg/nft/dog.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Type</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs xs:text-xs">German
-                        Shepherd</p>
-                    </div>
-                  </div>
-                  <!-- Box 2 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/briefcase.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Job Title</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Risk Analyst</p>
-                    </div>
-                  </div>
-                  <!-- Box 3 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/tshirt.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Shirt</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Blue Shirt</p>
-                    </div>
-                  </div>
-                  <!-- Box 4 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/watch.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Accessory</p>
-                      <p class="flex flex-wrap text-3xs font-black leading-3 text-white 2xs:text-2xs">
-                        <span>Suspen</span><span>ders</span></p>
-                    </div>
-                  </div>
-                  <!-- Box 5 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/dice.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Proficiency</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Roulette</p>
-                    </div>
-                  </div>
-                  <!-- Box 6 -->
-                  <div class="flex items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex h-8 w-8 justify-center overflow-hidden rounded-md">
-                      <img class="w-8" src="./images/svg/nft/mustache.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Facial Hair</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Clean Shave</p>
-                    </div>
-                  </div>
-                  <!-- Box 7 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/eye.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Eye Color</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Fiji Bungalo</p>
-                    </div>
-                  </div>
-                  <!-- Box 8 -->
-                  <div class="flex min-h-14 items-center gap-4 rounded-md bg-sldr-2nd-green px-3 py-2.5">
-                    <div class="flex min-h-6 min-w-6 justify-center overflow-hidden rounded-md">
-                      <img class="min-w-8" src="./images/svg/nft/paintbrush.svg" alt="Image description" />
-                    </div>
-                    <div class="uppercase">
-                      <p class="mb-1 text-4xs font-bold text-white xs:text-3xs">Background</p>
-                      <p class="text-3xs font-black leading-3 text-white 2xs:text-2xs">Sage</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         <!-- Slider Nav -->
         <div id="sliderNav" class="relative flex h-48 w-full justify-center items-center">
           <div class="red-circle w-16 h-16 absolute rounded-full bg-red-500"></div>
@@ -1113,7 +1144,16 @@
     </main>
 
     <!-- Scripts -->
+    
+    <!-- Blaze Slider -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const el = document.querySelector('.blaze-slider');
+            new BlazeSlider(el);
+        });
+    </script>
 
+    <!-- Main -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const sliderNav = document.getElementById("sliderNav");
