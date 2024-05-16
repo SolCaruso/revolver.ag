@@ -2,3 +2,55 @@
     (100% - (var(--slides-to-show) - 1) * var(--slide-gap)) /
       var(--slides-to-show)
   );box-sizing:border-box}.blaze-track>*{box-sizing:border-box;width:var(--slide-width);flex-shrink:0}
+
+/* Custom Styles */
+
+:root {
+    --revolver-gradient: linear-gradient(
+    to right,
+    var(--revolver-red),
+    rgba(255, 111, 110, 1)
+  );
+}
+
+
+.blaze-pagination {
+  display: flex;
+  gap: 18px;
+}
+
+
+.blaze-pagination button {
+  font-size: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  outline: none;
+  border: none;
+  background: #7E7E7E;
+  cursor: pointer;
+  transition: transform 200ms ease, background-color 300ms ease, width 300ms ease, border-radius 300ms ease;
+}
+
+.blaze-pagination button.active {
+  background: var(--revolver-gradient);
+  width: 3.5rem;
+  border-radius: 1rem;
+}
+
+.blaze-next,
+.blaze-prev {
+  border: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background: none;
+  cursor: pointer;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath fill='white' d='M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z'/%3E%3C/svg%3E");
+}
+
+.blaze-next {
+  transform: rotate(180deg);
+}
