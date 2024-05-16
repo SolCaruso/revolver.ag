@@ -3654,6 +3654,10 @@ video {
     margin-top: 8rem;
   }
 
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .sm\:inline-block {
     display: inline-block;
   }
@@ -3692,6 +3696,14 @@ video {
 
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  .md\:mt-28 {
+    margin-top: 7rem;
   }
 
   .md\:flex {
