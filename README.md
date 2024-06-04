@@ -9,9 +9,9 @@
 [x] - Create better look for active and hover effect for Menu drop down
 [x] - Create better look drop-down nav itself
 [x] - Fix drop-down active and non active button
-[ ] - Create slider functionality
-[ ] - Create different slides
+[x] - Create slider functionality
+[x] - Create different slides
 [ ] - Replace all images with .webp format
-[ ] - Add propper responsive image resizing
+[x] - Add propper responsive image resizing
 [ ] - Clean up index.html look
 [ ] - Add paralax effect with WildHart
