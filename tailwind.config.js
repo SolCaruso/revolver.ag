@@ -73,6 +73,8 @@ module.exports = {
         "xs": "440px",
         "2xs": "340px",
         "nav": "850px",
+        "wild": "1540px",
+        "3xl": "2000px",
       },
       borderRadius: {
         "xl": "1rem",

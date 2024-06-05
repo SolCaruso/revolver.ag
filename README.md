@@ -14,4 +14,4 @@
 [ ] - Replace all images with .webp format
 [x] - Add propper responsive image resizing
 [ ] - Clean up index.html look
-[ ] - Add paralax effect with WildHart
+[x] - Add paralax effect with WildHart

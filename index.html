@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100.900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/tno0pkr.css">
 
     <!-- Favicon Styles -->
     <link rel="icon" type="image/x-icon" href="./images/svg/revolver/favicon.svg" />
@@ -164,9 +165,25 @@
 
     <!-- Main Content Area Starts -->
     <main>
-      <!-- Lily Section -->
-      <section class="flex h-44 justify-end p-4">
-        <picture>
+
+      <div class="pt-52 lg:pt-44">
+        <!-- Chat bubble -->
+        <div id="chat" class="absolute w-44 lg:w-64 lg:h-64 right-24 invisible wild:visible lg:top-80 2xl:top-60 3xl:w-72 3xl:h-72 cursor-pointer z-50"></div>
+        <div id="chat-bubble" class="mr-auto flex max-w-[30%] flex-col gap-2 rounded-tr-xl rounded-l-xl bg-white p-4 md:max-w-[20%] absolute right-24 top-28 opacity-0 z-60 shadow-md">
+          <span class="font-bold text-black">Lily Wildhart</span>
+          <div class="text-base text-black font-medium">
+            Hi there Sidewinder! Welcome to the home of the most degenerate sports bettors on Solana!
+          </div>
+        </div>
+
+        <!-- Lily Section -->
+        <section class="parallax-container">
+          <img class="wildhart absolute invisible md:visible w-44 sm:w-56 lg:w-64 right-24 top-80 lg:top-80 2xl:top-0 3xl:w-72" id="wildhart" src="./images/png/wildhart/wildhart.png" alt="Lily Wildhart"/>
+          <img class="bullets absolute invisible md:visible w-44 sm:w-56 lg:w-64 right-24 top-80 lg:top-80 2xl:top-0 3xl:w-72" src="./images/png/bullets/wildhart.png" alt="Lily Wildhart Bullets"/>
+        </section>        
+      </div>
+
+        <!-- <picture>
           <source srcset="./images/png/wildhart/wildhart-320_x_344.png, ./images/png/wildhart/wildhart-640_x_689.png 2x, ./images/png/wildhart/wildhart-960_x_1033.png 3x" media="(max-width: 320px)" />
 
           <source srcset="./images/png/wildhart/wildhart-480_x_517.png, ./images/png/wildhart/wildhart-960_x_1033.png 2x, ./images/png/wildhart/wildhart-1440_x_1550.png 3x" media="(max-width: 480px)" />
@@ -176,8 +193,7 @@
           <source srcset="./images/png/wildhart/wildhart-960_x_1033.png, ./images/png/wildhart/wildhart-1920_x_2066.png 2x, ./images/png/wildhart/wildhart-2880_x_3099.png 3x" media="(max-width: 960px)" />
 
           <img class="wildhart" src="./images/png/wildhart/wildhart.png" alt="Lily Wildhart" />
-        </picture>
-      </section>
+        </picture> -->
 
       <!-- Revolver Hero Section -->
       <section class="hero">
@@ -192,6 +208,11 @@
 
       <!-- Underdog Section -->
       <section class="underdog">
+        <div class="monocle-container">
+          <div class="monocle">
+            <div class="glass"></div>
+          </div>
+        </div>
         <picture>
           <source srcset="./images/png/underdog/underdog-320_x_320.png, ./images/png/underdog/underdog-640_x_640.png 2x, ./images/png/underdog/underdog-960_x_960.png 3x" media="(max-width: 320px)" />
 
@@ -261,5 +282,6 @@
           });
       });
     </script>
+
   </body>
 </html>

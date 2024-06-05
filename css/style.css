@@ -88,6 +88,8 @@ html {
 
 
 
+
+
 /*--------------- SLIDER --------------- */
 
 #sliderNavWrapper {
@@ -292,9 +294,9 @@ p {
 /* ---------------- LILY SECTION ---------------- */
 
 .wildhart {
-  max-width: 9.5em;
+  /* max-width: 9.5em; */
   animation: bobbing 3s ease-in-out infinite;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 
 @keyframes bobbing {
@@ -309,12 +311,47 @@ p {
   }
 }
 
-.lily-container {
+/* .lily-container {
   height: 11em;
   display: flex;
   justify-content: end;
   padding: 1em;
+} */
+
+.bullets {
+  animation: rotate3D 3s infinite;
+  transform-origin: center;
 }
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateY(10deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(10deg);
+  }
+}
+
+.parallax-container {
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+/* 
+.parallax-container img {
+  position: absolute;
+} */
+
+#chat:hover + #chat-bubble {
+  opacity: 100%;
+}
+
+#chat-bubble {
+  transition: opacity 0.3s ease;
+}
+
+
 
 /* --------------- UNDERDOG SECTION --------------- */
 
@@ -381,13 +418,13 @@ p {
 
   /* ----------------- LILY SECTION ------------------ */
 
-  .wildhart {
+  /* .wildhart {
     position: absolute;
     top: 18em;
     right: 10em;
     max-width: 18em;
     transition: all ease-in-out 0.3s;
-  }
+  } */
 }
 
 /**************************************************** 
@@ -395,12 +432,12 @@ p {
  *****************************************************/
 
 @media only screen and (max-width: 2200px) and (min-width: 931px) {
-  .wildhart {
+  /* .wildhart {
     position: absolute;
-    top: 8em;
+    top: 12em;
     right: 5em;
     max-width: 15em;
-  }
+  } */
 
   .hero {
     max-width: 900px;
@@ -411,6 +448,16 @@ p {
     min-width: 800px;
   }
 }
+
+/* @media only screen and (max-width: 2200px) and (min-width: 931px) {
+  .wildhart {
+    position: absolute;
+    top: 12em;
+    right: 5em;
+    max-width: 15em;
+  }
+
+} */
 
 @media only screen and (max-width: 1700px) and (max-height: 1224px) {
   .dog {
@@ -459,10 +506,10 @@ p {
     padding: 0 1em;
     margin-top: -8em;
   }
-
+/* 
   .lily-container {
     padding: 0 1em 0 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 780px) and (min-width: 330px) and (max-height: 630px) {
