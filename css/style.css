@@ -87,9 +87,6 @@ html {
 }
 
 
-
-
-
 /*--------------- SLIDER --------------- */
 
 #sliderNavWrapper {
@@ -311,13 +308,6 @@ p {
   }
 }
 
-/* .lily-container {
-  height: 11em;
-  display: flex;
-  justify-content: end;
-  padding: 1em;
-} */
-
 .bullets {
   animation: rotate3D 3s infinite;
   transform-origin: center;
@@ -336,12 +326,9 @@ p {
 }
 
 .parallax-container {
-  perspective: 1000px; /* Add perspective for 3D effect */
+  perspective: 1000px; 
 }
-/* 
-.parallax-container img {
-  position: absolute;
-} */
+
 
 #chat:hover + #chat-bubble {
   opacity: 100%;
