@@ -3638,11 +3638,6 @@ video {
   background-color: rgba(0, 0, 0, 0.10);
 }
 
-.hover\:bg-red-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-rvr-hover-3:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 186 186 / var(--tw-bg-opacity));
@@ -3654,8 +3649,8 @@ video {
 }
 
 .hover\:bg-rvrbttn:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(245, 63, 77, 1)), to(rgba(245, 101, 100, 1)));
-  background-image: linear-gradient(to right, rgba(245, 63, 77, 1), rgba(245, 101, 100, 1));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(265, 83, 87, 1)), to(rgba(265, 121, 120, 1)));
+  background-image: linear-gradient(to right, rgba(265, 83, 87, 1), rgba(265, 121, 120, 1));
 }
 
 .hover\:font-bold:hover {
