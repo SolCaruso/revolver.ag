@@ -3653,6 +3653,11 @@ video {
   background-image: linear-gradient(to right, rgba(255, 73, 77, 1), rgba(255, 111, 110, 1));
 }
 
+.hover\:bg-rvrbttn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(245, 63, 77, 1)), to(rgba(245, 101, 100, 1)));
+  background-image: linear-gradient(to right, rgba(245, 63, 77, 1), rgba(245, 101, 100, 1));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }

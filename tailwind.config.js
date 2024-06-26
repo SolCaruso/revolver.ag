@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         rvr: "linear-gradient(to right, rgba(255, 73, 77, 1), rgba(255, 111, 110, 1))",
+        rvrbttn: "linear-gradient(to right, rgba(245, 63, 67, 1), rgba(245, 101, 100, 1))",
       }),
       fontSmoothing: ["antialiased"],
       textTransform: {
