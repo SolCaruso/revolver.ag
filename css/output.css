@@ -3540,6 +3540,10 @@ video {
   contain: var(--tw-contain-size) var(--tw-contain-layout) var(--tw-contain-paint) var(--tw-contain-style);
 }
 
+.content-\[\'this-is-also-valid\]-weirdly-enough\'\] {
+  --tw-content: 'this-is-also-valid]-weirdly-enough';
+  content: var(--tw-content);
+}
 
 .forced-color-adjust-auto {
   forced-color-adjust: auto;
@@ -3547,6 +3551,10 @@ video {
 
 .forced-color-adjust-none {
   forced-color-adjust: none;
+}
+
+.\[a-zA-Z0-9\:\\\\-\\\\\._\$\] {
+  a-z-a--z0-9: \\-\\. $;
 }
 
 @media (min-width: 640px) {
