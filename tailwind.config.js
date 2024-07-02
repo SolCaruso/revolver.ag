@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'rvr-shadow': ' 0px 0px 11.4px 1px rgba(255, 71, 76, 0.56)',
+        'rvr-shadow': ' 0px 2.5px 11.4px 1px rgba(0, 0, 0, 0.08)',
       },
       backgroundImage: (theme) => ({
         rvr: "linear-gradient(to right, rgba(255, 73, 77, 1), rgba(255, 111, 110, 1))",
