@@ -39,7 +39,7 @@ html {
   --slider-1-color: #92a591;
   --slider-1-rarity: #9867ef;
 }
-
+/* 
 body {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -55,6 +55,10 @@ body::-webkit-scrollbar {
 
 html {
   scrollbar-width: none;
+} */
+
+html {
+  overflow-y: scroll;
 }
 
 .nav-a:hover .nav-svg path {
