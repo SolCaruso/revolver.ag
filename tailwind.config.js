@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'rvr-shadow': ' 0px 2.5px 11.4px 1px rgba(0, 0, 0, 0.08)',
+        'rvr-shadow': ' 0px 4px 6px .5px rgba(0, 0, 0, 0.08)',
       },
       backgroundImage: (theme) => ({
         rvr: "linear-gradient(to right, rgba(255, 73, 77, 1), rgba(255, 111, 110, 1))",
@@ -96,4 +96,13 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    function({ addUtilities }) {
+      // Custom plugin to ensure these specific classes do not get generated
+      addUtilities({
+        '.content-[\'this-is-also-valid-weirdly-enough\']': {},
+        '[a-zA-Z0-9\\:\\\\.\\\\._\\$]': {},
+      }, { variants: [] });
+    },
+  ],
 };
