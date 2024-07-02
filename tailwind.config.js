@@ -96,13 +96,4 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    function({ addUtilities }) {
-      // Custom plugin to ensure these specific classes do not get generated
-      addUtilities({
-        '.content-[\'this-is-also-valid-weirdly-enough\']': {},
-        '[a-zA-Z0-9\\:\\\\.\\\\._\\$]': {},
-      }, { variants: [] });
-    },
-  ],
 };
