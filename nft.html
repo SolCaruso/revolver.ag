@@ -1191,40 +1191,30 @@
 
     <!-- Main -->
     <script>
+      
       document.addEventListener("DOMContentLoaded", function() {
         const sliderNav = document.getElementById("sliderNav");
         const redCircle = sliderNav.querySelector('.red-circle');
         const grayCircle = sliderNav.querySelector('.gray-circle');
         const navButtons = sliderNav.querySelector('.nav-buttons');
-        let animationTriggered = false;
-
+        
         // Function to add animation classes
         function addAnimationClasses() {
           grayCircle.classList.add('grayAnimation');
           redCircle.classList.add('redAnimation');
         }
 
-        // Create an Intersection Observer with a threshold of 0.8
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.intersectionRatio >= 0.8 && !animationTriggered) {
-              addAnimationClasses();
-              animationTriggered = true; // Set the flag to true after animation is triggered
-              
-              // Trigger the second animation earlier using a timeout
-              setTimeout(() => {
-                grayCircle.classList.add('expand');
-                navButtons.style.opacity = 1; // Show nav buttons
-              }, 1300); // Adjust this value to control how much earlier the second animation starts
-            }
-          });
-        }, {
-          threshold: 0 // Trigger when 80% of the element is visible
-        });
-
-        // Observe the sliderNav element
-        observer.observe(sliderNav);
+        // Trigger the animations as soon as the page loads
+        addAnimationClasses();
+        
+        // Trigger the second animation using a timeout
+        setTimeout(() => {
+          grayCircle.classList.add('expand');
+          navButtons.style.opacity = 1; // Show nav buttons
+        }, 1300); // Adjust this value to control how much earlier the second animation starts
       });
+
+
 
 
       // (Slider)
