@@ -259,5 +259,12 @@
           });
       });
     </script>
+     <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              if (navigator.appVersion.indexOf("Win") !== -1) {
+                  document.documentElement.classList.add("windows");
+              }
+          });
+    </script>
   </body>
 </html>

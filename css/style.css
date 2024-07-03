@@ -39,6 +39,15 @@ html {
   --slider-1-color: #92a591;
   --slider-1-rarity: #9867ef;
 }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.windows body {
+  font-family: 'Inter', sans-serif;
+}
+
 /* 
 body {
   scrollbar-width: none;
