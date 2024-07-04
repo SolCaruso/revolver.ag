@@ -1992,6 +1992,10 @@ video {
     width: auto;
   }
 
+  .lg\:w-2\/5 {
+    width: 40%;
+  }
+
   .lg\:max-w-\[1200px\] {
     max-width: 1200px;
   }
