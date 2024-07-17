@@ -775,10 +775,6 @@ video {
   margin-right: 0.25rem;
 }
 
-.mr-1\.5 {
-  margin-right: 0.375rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -892,10 +888,6 @@ video {
   width: 4rem;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
 .w-44 {
   width: 11rem;
 }
@@ -985,13 +977,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.flex-row-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
 .flex-col {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1076,11 +1061,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
-.self-end {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .self-center {
@@ -1567,11 +1547,6 @@ video {
   color: rgb(255 1 1 / var(--tw-text-opacity));
 }
 
-.text-rvr-hover-2 {
-  --tw-text-opacity: 1;
-  color: rgb(255 106 105 / var(--tw-text-opacity));
-}
-
 .text-rvr-red {
   --tw-text-opacity: 1;
   color: rgb(255 84 87 / var(--tw-text-opacity));
@@ -1623,10 +1598,6 @@ video {
   opacity: 0;
 }
 
-.opacity-10 {
-  opacity: 0.1;
-}
-
 .shadow-rvr-shadow {
   --tw-shadow:  0px 4px 6px .5px rgba(0, 0, 0, 0.08);
   --tw-shadow-colored: 0px 4px 6px .5px var(--tw-shadow-color);
@@ -1662,6 +1633,17 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+.transition {
+  -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
 .transition-all {
   -webkit-transition-property: all;
   transition-property: all;
@@ -1680,14 +1662,36 @@ video {
           transition-duration: 150ms;
 }
 
+.duration-150 {
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+
 .duration-200 {
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
 }
 
+.duration-300 {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.ease-in {
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .ease-in-out {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:scale-103:hover {
+  --tw-scale-x: 1.03;
+  --tw-scale-y: 1.03;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border-gray-300:hover {
@@ -2134,32 +2138,5 @@ video {
 
   .\33xl\:pt-24 {
     padding-top: 6rem;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-black {
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-rvr-grey {
-    --tw-bg-opacity: 1;
-    background-color: rgb(130 130 130 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-neutral-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-rarity-black {
-    --tw-bg-opacity: 1;
-    background-color: rgb(51 56 50 / var(--tw-bg-opacity));
-  }
-
-  .dark\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
