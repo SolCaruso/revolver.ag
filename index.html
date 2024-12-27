@@ -38,7 +38,7 @@
       <nav class="mx-auto max-w-[1200px]">
         <ul class="max-w-100 flex items-center justify-between px-4 py-6">
           <li class="cursor-pointer">
-            <a href="./index.html"><img src="./images/svg/revolver/revolver.svg" alt="Revolver Logo" class="h-7 xs:h-8 transition ease-in hover:scale-103  duration-150"/></a>
+            <a href="./index.html"><img src="./images/svg/revolver/revolver.svg" alt="Revolver Logo" class="h-7 xs:h-8 transition ease-in hover:scale-103  duration-150 logo" id="logo"/></a>
           </li>
           <div class="hidden items-center nav:flex">
             <li class="mx-1.5 flex cursor-pointer rounded-md border border-gray-200 bg-nav-grey px-4 py-2 hover:border-gray-300 hover:bg-nav-grey-hover" onclick="window.location.href='./nft.html';"><a class="text-xs font-bold text-gray-700" href="./nft.html" aria-label="current page">NFT</a></li>
@@ -185,7 +185,8 @@
       <section class="hero">
         <div class="title">
           <img src="./images/svg/revolver/revolver.svg" alt="Revolver.ag" />
-          <h3>REVOLVER BETTORS CLUB</h3>
+          <img src="./images/png/revolver/bet.png" alt="Revolver.ag" class="bet"/>
+          <!-- <h3>REVOLVER BETTORS CLUB</h3> -->
         </div>
         <button class="hero-button">
           <a href="https://www.gitbook.com/?utm_source=content&utm_medium=trademark&utm_campaign=ebIAvkPlBfY63qQoNA0S">Learn More<img src="./images/svg/icons/arrow-right.svg" alt="link to our documentation" /></a>
@@ -213,7 +214,10 @@
       </section>
     </main>
 
+    
+
     <script>
+      
           document.addEventListener('DOMContentLoaded', function() {
           const navButton = document.getElementById('navButton');
           const dropDown = document.getElementById('dropDown');
